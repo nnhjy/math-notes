@@ -56,7 +56,16 @@ Insert abstract
 
 
 \section{Introduction}
-\cite{einstein}
+
+\mydef \cite{einstein} is an in-text citation.
+
+\thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
+
+\begin{proof}
+
+Since $K \subset \underset{\alpha \in A}\cup U_\alpha$, for each point $p$ in $K$ there is a positive number $2\varepsilon(p)$ so that the ball $B(p,2\varepsilon(p))$ is contained in one of the open sets of $\mathcal{F}$. Clearly $\{B(p,2\varepsilon(p)\}_{p \in K}$ forms an open cover of K, and so by compactness this admits a finite refinement.
+
+\end{proof}
 
 \newpage
 \bibliographystyle{plain}
