@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - 'src\vector-arithmatic-property\vector-arithmatic-property.tex'    
+      - 'src/vector-arithmatic-property/**'    
 
 jobs:
   build_latex:
