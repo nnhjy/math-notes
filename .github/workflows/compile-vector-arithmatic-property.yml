@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - 'tex/vector-arithmatic-property.tex'    
+      - 'src\vector-arithmatic-property\vector-arithmatic-property.tex'    
 
 jobs:
   build_latex:
@@ -18,7 +18,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: vector-arithmatic-property.tex
-          working_directory: src
+          working_directory: src/vector-arithmatic-property
           
 #       - name: Check pdf files
 #         run:
@@ -27,7 +27,7 @@ jobs:
       - name: Upload vector-arithmatic-property.pdf
         run: |          
           # Move file to root folder
-          mv $GITHUB_WORKSPACE/src/vector-arithmatic-property.pdf $GITHUB_WORKSPACE/pdfs/vector-arithmatic-property.pdf
+          mv $GITHUB_WORKSPACE/src/vector-arithmatic-property/vector-arithmatic-property.pdf $GITHUB_WORKSPACE/pdfs/vector-arithmatic-property.pdf
           
           # configure git
           git config --global user.name "nnhjy"

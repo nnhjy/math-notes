@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\pagestyle{empty}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{eucal}
+
+\usepackage{graphicx,psfrag} %only include if using pictures
+
+\usepackage{ifthen} %only include if using conditional package
+
+%\usepackage{xymatrix}
+
+
+%keep this...%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Side Margins
+\evensidemargin 0.1 in \oddsidemargin 0.1 in
+
+%Paragraph Size
+\parindent 24pt
+
+%size of page
+\textheight 9.6 in \textwidth 6.2 in
+\baselineskip 9.6 in \topmargin 0.005 in
+
+
+% ***********************************************************************
+\include(definitions)
+%
+% *******************************************************************
+% At First run of Template, only modify from here below........ *****
+% *******************************************************************
+
+\title{test}
+\author{Jiangyi Huang}
+\date{August 2022}
+
+\begin{document}
+
+\maketitle
+
+% ******************** ABSTRACT *************************************
+\begin{abstract}
+Insert abstract
+\end{abstract}
+% Must be present so the above information is displayed.
+% *******************************************************************
+% **** Begin Typing your work from here below ***********************
+% *******************************************************************
+
+
+\section{Introduction}
+\cite{einstein}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{refs.bib}
+
+\end{document}
