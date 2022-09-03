@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{indentfirst}
 
 \pagestyle{empty}
 
@@ -37,9 +39,9 @@
 % At First run of Template, only modify from here below........ *****
 % *******************************************************************
 
-\title{test}
+\title{Proof on the distribution property over addition of vector multiplications in Euclidean space}
 \author{Jiangyi Huang}
-\date{August 2022}
+\date{\today}
 
 \begin{document}
 
@@ -57,7 +59,13 @@ Insert abstract
 
 \section{Introduction}
 
-\mydef \cite{einstein} is an in-text citation.
+Matrix notation is usually accepted as the definition of computing multiplications of Euclidean vectors, be it dot product or cross product, under coordinate denotation. A dot product is calculated as a \href{https://en.wikipedia.org/wiki/Dot_product#Algebraic_definition}{matrix product}, and a cross product is calculated as \href{https://en.wikipedia.org/wiki/Cross_product#Coordinate_notation}{formal determinant}. These arithmetic operations are done by adding and multiplying, in the respective manner, over the base vectors of the target vectors to be computed. A vector has at least two dimensions, i.e. $\mathbi{a} \in \Rn$ where $n \in \Z$ and $n \geq 2$, thus multiplying two Euclidean vectors under coordinate denotation requires the property of the vector multiplication being distributive.
+
+Being a consequence of distribution law of vector product, matrix calculation rules are ineligible to deduce the law. In contrast, it is the distribution property of vector multiplication over addition that enables matrix product to be computed in this way. The distribution property of vector multiplication must originate from more essential properties of vectors, independent from coordinate denotation. 
+
+Vector is defined in Euclidean space so the geometric properties should underlie its arithmetic properties. Starting from such connection, this paper proves the distribution law over addition of dot and cross product of Euclidean vectors.
+
+\mydef \cite{einstein} is an in-text citation.\rm
 
 \thm Let $K$ be a compact set in a metric space $(X,d)$. Suppose $\mathcal{F}=\{U_\alpha\}_{\alpha \in A}$ is an open cover of $K$, then there exists a positive number $\lambda$ so that for every $p \in K$ the open ball $B(p,\lambda)$ is contained in one of the open sets of $\mathcal{F}$.
 
